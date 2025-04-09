@@ -18,9 +18,9 @@ mpl.rcParams['axes.formatter.use_mathtext'] = False
 
 def read_color_scale_and_create_map(file_path):
     """
-    读取颜色条文件，并返回区间的边界、对应的颜色列表以及颜色映射和归一化对象
-    :param file_path: 颜色条文件路径
-    :return: boundaries (区间的边界), colors (对应的颜色), cmap (颜色映射), norm (归一化对象)
+    
+    :param file_path: file_path of colorbar
+    :return: boundaries, colors , cmap , norm
     """
     boundaries = []
     colors = []
@@ -73,7 +73,7 @@ def read_color_scale_and_create_map(file_path):
 
 def main():
     print(os.getcwd())
-    ############################ 数据准备与画布初始化
+    ############################ 
     csv_path = r".\paixu.csv"
     data = pd.read_csv(csv_path)
 
@@ -90,7 +90,7 @@ def main():
     extent = [-180, 180, -60, 90]  
 
 
-    ############################ 绘制第一个子图
+    ############################ 
 
     color0_pth = r"./median_colorbar.txt"
     boundaries0, colors0, cmap0, norm0 = read_color_scale_and_create_map(color0_pth)
@@ -196,7 +196,7 @@ def main():
 
 
 
-    ############################ 绘制第二个子图
+    ############################ 
     color1_pth = r"./pth5_colorbar.txt"
 
     boundaries1, colors1, cmap1, norm1 = read_color_scale_and_create_map(color1_pth)
@@ -302,7 +302,7 @@ def main():
 
 
         
-    ############################ 绘制第三个子图
+    ############################ 
     color2_pth = r"./p10_colorbar.txt"
     boundaries2, colors2, cmap2, norm2 = read_color_scale_and_create_map(color2_pth)
 
