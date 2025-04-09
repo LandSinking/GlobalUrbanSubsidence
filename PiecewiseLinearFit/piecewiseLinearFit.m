@@ -23,7 +23,7 @@ for i=1:length(folders)
     % parameters of linear fit for all dates
     change_point_par_k0 = nan(row,col);
     change_point_par_b0 = nan(row,col);    
-    % parameters of linear fit for dates befroe the change point
+    % parameters of linear fit for dates before the change point
     change_point_par_k1 = nan(row,col);
     change_point_par_b1 = nan(row,col);   
     % parameters of linear fit for dates after the change point
