@@ -1,4 +1,4 @@
-# SBAS_China: steps for InSAR time series analysis
+# SBASWorkflow: steps for InSAR time series analysis
 # 
 This is an example from Houston that demonstrates SBAS InSAR processing for monitoring global urban subsidence, utilizing [ASF's Vertex cloud computing platform](https://search.asf.alaska.edu/) and the [MintPy package](https://github.com/insarlab/MintPy).
 
@@ -12,6 +12,8 @@ The Houston configuration file at `config/USA_357_Houston.py` records key parame
 **For more information on the InSAR processing parameters used for 465 global major cities, see Table S1 (Supplementary Materials) of our manuscript.**
 
 **Our monitoring results are available in [GUS portal](https://ee-pkurelab.projects.earthengine.app/view/gus).**
+
+The entire procedure of InSAR time series analysis can be executed following the workflow below:
 
 1. edit the ASFUsr and ASFPwd in `config/USA_357_Houston.py`, and run `procSearchPairs.py` to geneate Sentinel-1 stack
 <pre><code>python procSearchPairs.py -c ../config/USA_357_Houston.py</code></pre>
