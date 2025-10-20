@@ -16,10 +16,10 @@ The Houston configuration file at `config/USA_357_Houston.py` records key parame
 The entire procedure of InSAR time series analysis can be executed following the workflow below:
 
 1. edit the ASFUsr and ASFPwd in `config/USA_357_Houston.py`, and run `procSearchPairs.py` to geneate Sentinel-1 stack
-···
+```
 cd ./code
 python procSearchPairs.py -c ../config/USA_357_Houston.py
-···
+```
 2. run `procMdfPairs.py` to filter the image pairs and edit the SBAS network via a simple GUI
 <pre><code>python procMdfPairs.py -c ../config/USA_357_Houston.py</code></pre>
 3. run `procHYP3.py` with `-s` option to submit jobs to ASF. Details for available options can be found in the source code.
