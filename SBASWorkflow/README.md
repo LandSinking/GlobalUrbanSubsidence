@@ -2,7 +2,12 @@
 # 
 This is an example from Houston that demonstrates SBAS InSAR processing for monitoring global urban subsidence, utilizing [ASF's Vertex cloud computing platform](https://search.asf.alaska.edu/) and the [MintPy package](https://github.com/insarlab/MintPy).
 
-The Houston configuration file at `config/USA_357_Houston.py` records key parameters for data preprocessing and InSAR time-series analysis; including the base image, temporal and frame ranges for SBAS stack search; study area extent for image clipping; reference point coordinates and the coherence threshold for MintPy analysis.
+The Houston configuration file at `config/USA_357_Houston.py` records key parameters for data preprocessing and InSAR time-series analysis, including 
+
+-base image, temporal and frame ranges for SBAS stack search
+-ASF accounts and password for submitting jobs to ASF's Vertex cloud computing platform
+-study area extent for image clipping
+-reference point coordinates and the coherence threshold for MintPy analysis.
 
 **For more information on the InSAR processing parameters used for 465 global major cities, see Table S1 (Supplementary Materials) of our manuscript.**
 
