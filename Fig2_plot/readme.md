@@ -2,4 +2,7 @@
 
 # Fig2_plot
 
-Run `Fig2_plot.py` to generate figure 1 as shown in our manuscript.
+Steps for reproducing figure 2 in our manuscript:
+
+- Unzip `../Regional_boundary.zip` , which contains the shapefiles required to draw the intercontinental boundaries.
+- Run `Fig2_plot.py` to generate figure 2
