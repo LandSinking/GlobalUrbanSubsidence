@@ -1,6 +1,6 @@
 # SBASWorkflow: steps for InSAR time series analysis
 # 
-This is an example from Houston that demonstrates SBAS InSAR processing for monitoring global urban subsidence, utilizing [ASF's Vertex cloud computing platform](https://search.asf.alaska.edu/) and the [MintPy package](https://github.com/insarlab/MintPy).
+This is an example from Houston that demonstrates SBAS InSAR processing for monitoring global urban subsidence, utilizing [ASF's Vertex cloud computing platform](https://search.asf.alaska.edu/) and [MintPy package](https://github.com/insarlab/MintPy).
 
 The Houston configuration file at `config/USA_357_Houston.py` records key parameters for data preprocessing and InSAR time-series analysis, including 
 
