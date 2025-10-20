@@ -9,9 +9,9 @@ The Houston configuration file at `config/USA_357_Houston.py` records key parame
 - Study area extent for image clipping
 - Reference point coordinates and the coherence threshold for MintPy analysis.
 
-**For more information on the InSAR processing parameters used for 465 global major cities, see Table S1 (Supplementary Materials) of our manuscript.**
+**For detailed information on the InSAR processing parameters used for 465 global major cities, see Table S1 (Supplementary Materials) of our manuscript.**
 
-**Our monitoring results are available in [GUS portal](https://ee-pkurelab.projects.earthengine.app/view/gus).**
+**Our monitoring results and reference points are available in [GUS portal](https://ee-pkurelab.projects.earthengine.app/view/gus).**
 
 The entire procedure of InSAR time series analysis can be executed following the workflow below:
 
