@@ -1,4 +1,6 @@
-# GlobalUrbanSubsidence
+# Intruduction
+
+Urban land subsidence occurs worldwide, yet a global-scale assessment based on a consistent methodology is still absent, hindering the implementation of targeted adaption or mitigation measures. Using satellite-based Interferometric Synthetic Aperture Radar data (2014-2023), we produced self-consistent, high-spatial-resolution relative local land subsidence maps for global major cities.
 
 - SBASWorkflow
   
