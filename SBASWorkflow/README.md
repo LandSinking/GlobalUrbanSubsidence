@@ -26,7 +26,7 @@ The entire procedure of InSAR time series analysis can be executed following the
 5. Download the interferogram products to the folder `S1AAdata/USA_357_Houston`, and then run `procPrepData.py` to unzip, clip and prepare the datasets
 <pre><code>python procPrepData.py -c ../config/USA_357_Houston.py</code></pre> 
 6. As advised by the ASF's HyP3 platform — ***Always doubt your interferogram first!*** — users must carefully inspect the quality of each interferogram to ensure the reliability of InSAR-derived results. 
-7. run 'procSBAS.py' to start the first round of MintPy time series analysis
+7. run `procSBAS.py` to start the first round of MintPy time series analysis
 <pre><code>python procSBAS.py -c ../config/USA_357_Houston.py</code></pre> 
 8. Result files can be found in folder `./workplace_USA_357_Houston/Mintpy`
 9. Identify a new reference point where the subsiding velocity is close to the mode, typically on a man-made structure; and then update the `reference_yx` variable in the config file with the new reference point's Y and X coordinates in the result file. Afterwards, run second round of Mintpy time series analysis with the new reference point:
