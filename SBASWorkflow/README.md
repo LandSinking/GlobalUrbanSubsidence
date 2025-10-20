@@ -1,11 +1,11 @@
 # SBASWorkflow: steps for InSAR time series analysis
 # 
-This is an example from Houston that demonstrates SBAS InSAR processing for monitoring global urban subsidence, utilizing [ASF's Vertex cloud computing platform](https://search.asf.alaska.edu/) and [MintPy package](https://github.com/insarlab/MintPy).
+This is an example from Houston that demonstrates SBAS InSAR processing for monitoring global urban subsidence, utilizing [ASF's HYP3 cloud computing platform](https://search.asf.alaska.edu/) and [MintPy package](https://github.com/insarlab/MintPy).
 
 The Houston configuration file at `config/USA_357_Houston.py` records key parameters for data preprocessing and InSAR time-series analysis, including 
 
 - Base image, temporal and frame ranges for SBAS stack search
-- ASF accounts and password for submitting jobs to ASF's Vertex cloud computing platform
+- ASF accounts and password for submitting jobs to ASF's HYP3 cloud computing platform
 - Study area extent for image clipping
 - Reference point coordinates and the coherence threshold for MintPy analysis.
 
