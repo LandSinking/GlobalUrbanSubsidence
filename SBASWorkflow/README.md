@@ -4,8 +4,8 @@ This is an example from Houston that demonstrates SBAS InSAR processing for moni
 
 The Houston configuration file at `config/USA_357_Houston.py` records key parameters for data preprocessing and InSAR time-series analysis, including 
 
-- Base image, temporal and frame ranges for SBAS stack search
-- ASF accounts and password for submitting jobs to ASF's HYP3 cloud computing platform
+- Base image, temporal and frame ranges for searching SBAS stacks
+- ASF account and password for submitting InSAR jobs to ASF's HYP3 cloud computing platform
 - Study area extent for image clipping
 - Reference point coordinates and the coherence threshold for MintPy analysis.
 
