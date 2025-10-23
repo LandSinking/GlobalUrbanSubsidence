@@ -13,7 +13,7 @@ import numpy as np
 from pathlib import Path
 import asf_search as asf
 from tqdm import tqdm, trange
-import sys
+import sys,pytz
 
 
 # parsing
@@ -34,8 +34,8 @@ postfix = setting.postfix
 frame_start=setting.startFrame
 frame_end=setting.endFrame
 datestr="20140101"
-stack_start=parse_date(datestr.replace(datestr[:len(str(setting.startYear))],str(setting.startYear)))
-stack_end=parse_date(datestr.replace(datestr[:len(str(setting.endYear))],str(setting.endYear)))
+stack_start=pytz.UTC.localize(parse_date(datestr.replace(datestr[:len(str(setting.startYear))],str(setting.startYear))))
+stack_end=pytz.UTC.localize(parse_date(datestr.replace(datestr[:len(str(setting.endYear))],str(setting.endYear))))
 
 
 # call ASF API to search for products
@@ -292,6 +292,7 @@ outputDF = pd.DataFrame({
 fnFinalPairs = auxRoot / f'{postfix}_final_pairs.csv'
 outputDF.to_csv(fnFinalPairs, index=False)
 print(f'\033[1;32;40mModified {finalMasterList.shape[0]} pairs saved to {fnFinalPairs}. \033[0m')
+
 
 
 
