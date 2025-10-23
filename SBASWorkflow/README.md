@@ -15,17 +15,14 @@ The Houston configuration file at `config/USA_357_Houston.py` records key parame
 
 The entire procedure of InSAR time series analysis can be executed following the workflow below:
 
-1. edit the ASFUsr and ASFPwd in `config/USA_357_Houston.py`, and run `procSearchAndModifyPairs.py` to search Sentinel-1 stack (according to the base image and date ranges in config file), filter the searched image pairs (according to the frame ranges in config file) and edit the SBAS network via a simple GUI：
+1. edit the ASFUsr and ASFPwd in `config/USA_357_Houston.py`, and run `procSearchAndModifyPairs.py` to search Sentinel-1 stack (according to the base image and date ranges in config file), filter the searched image pairs (according to the frame ranges in config file) and edit the SBAS network via a simple GUI. The code provides `-t` option to set the temporal baseline, and its default value is set to 36 days. In the editing GUI, the X and Y axes represent date and spatial baseline, respectively. Images are displayed as nodes, and pairs as lines connecting them.
+- To Add a Pair: Click the "Add pairs" button, then select two nodes to draw a line connecting them.
+- To Remove a Pair: Click the "Remove pairs" button, select a line (will be highlighted in red), and press the "Delete" key on the keyboard.
+*Note: Basic navigation tools (Reset, Pan, Zoom, etc.) in the lower-left corner are only accessible when the "Remove pairs" mode is active.*
 ```
 cd ./code
 python procSearchAndModifyPairs.py -c ../config/USA_357_Houston.py
 ```
-The code provides `-t` option to set the temporal baseline, and its default value is set to 36 days. 
-In the editing GUI, the X and Y axes represent date and spatial baseline, respectively. Images are displayed as nodes, and pairs as lines connecting them.
-- To Add a Pair: Click the "Add pairs" button, then select two nodes to draw a line connecting them.
-- To Remove a Pair: Click the "Remove pairs" button, select a line (will be highlighted in red), and press the "Delete" key on the keyboard.
-*Note: Basic navigation tools (Reset, Pan, Zoom, etc.) in the lower-left corner are only accessible when the "Remove pairs" mode is active.*
-
 2. run `procHYP3.py` with `-s` option to submit jobs to ASF. Details for available options can be found in the source code.
 <pre><code>python procHYP3.py -c ../config/USA_357_Houston.py -s</code></pre>
 3. After the jobs are finished, run `procHYP3.py` with `-d` option to get the links for downloading the interferogram products. 
