@@ -19,7 +19,7 @@ The entire procedure of InSAR time series analysis can be executed following the
 - To Add a Pair: Click the "Add pairs" button, then select two nodes to draw a line connecting them.
 - To Remove a Pair: Click the "Remove pairs" button, select a line (will be highlighted in red), and press the "Delete" key on the keyboard.
 *Note: Basic navigation tools (Reset, Pan, Zoom, etc.) in the lower-left corner are only accessible when the "Remove pairs" mode is active.*
-- To save your edits: Simply close the GUI. The edited results will be automatically saved to two files: {city}_final_pairs.csv and {city}_final_pairs.png.
+- To save your edits: Simply close the GUI. The edited results will be automatically saved to two files: `{city}_final_pairs.csv` and `{city}_final_pairs.png`.
 ```
 cd ./code
 python procSearchAndModifyPairs.py -c ../config/USA_357_Houston.py
