@@ -295,4 +295,4 @@ print(f'\033[1;32;40mModified {finalMasterList.shape[0]} pairs saved to {fnFinal
 
 
 
-#  python burstsearch.py -c K:\SBAS\config\CN_XTan.py
+
