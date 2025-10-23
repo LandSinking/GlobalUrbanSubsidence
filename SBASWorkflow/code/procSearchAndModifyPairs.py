@@ -19,7 +19,7 @@ import sys,pytz
 # parsing
 parser = argparse.ArgumentParser(description='Acquire some parameters for fusion restore')
 parser.add_argument('-c', '--config', required=True, help='path to config file (*.py)')
-parser.add_argument('-t', '--time_interval', default=36, type=int, help='max temporal baseline (days)')
+parser.add_argument('-t', '--time_interval', default=36, type=int, help='temporal baseline (days)')
 opt = parser.parse_args()
 max_temporal_baseline = opt.time_interval  #days
 configFile = Path(opt.config)
@@ -292,6 +292,7 @@ outputDF = pd.DataFrame({
 fnFinalPairs = auxRoot / f'{postfix}_final_pairs.csv'
 outputDF.to_csv(fnFinalPairs, index=False)
 print(f'\033[1;32;40mModified {finalMasterList.shape[0]} pairs saved to {fnFinalPairs}. \033[0m')
+
 
 
 
