@@ -21,14 +21,14 @@ cd ./code
 python procSearchAndModifyPairs.py -c ../config/USA_357_Houston.py
 ```
 
-  The code provides `-t` option to set the temporal baseline, and its default value is set to 36 days. 
+&nbsp;&nbsp;The code provides `-t` option to set the temporal baseline, and its default value is set to 36 days. 
 
-  In the editing GUI, the X and Y axes represent date and spatial baseline, respectively. Images are displayed as nodes, and pairs as lines connecting them.
-  - To Add a Pair: Click the "Add pairs" button, then select two nodes. A line will be drawn between them, creating a new pair.
+&nbsp;&nbsp;In the editing GUI, the X and Y axes represent date and spatial baseline, respectively. Images are displayed as nodes, and pairs as lines connecting them.
+&nbsp;&nbsp;- To Add a Pair: Click the "Add pairs" button, then select two nodes. A line will be drawn between them, creating a new pair.
 
-  - To Remove a Pair: Click the "Remove pairs" button, select a line, and press the "Delete" key on your keyboard. The line will be removed, deleting that pair.
+&nbsp;&nbsp;- To Remove a Pair: Click the "Remove pairs" button, select a line, and press the "Delete" key on your keyboard. The line will be removed, deleting that pair.
 
-  *Note: Basic navigation tools (Reset, Pan, Zoom, etc.) in the lower-left corner are only accessible when the "Remove pairs" mode is active.*
+&nbsp;&nbsp;*Note: Basic navigation tools (Reset, Pan, Zoom, etc.) in the lower-left corner are only accessible when the "Remove pairs" mode is active.*
 
 2. run `procHYP3.py` with `-s` option to submit jobs to ASF. Details for available options can be found in the source code.
 <pre><code>python procHYP3.py -c ../config/USA_357_Houston.py -s</code></pre>
