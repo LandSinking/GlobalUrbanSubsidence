@@ -75,6 +75,9 @@ cfgData = auxRoot / f"{jobName}_data.cfg"  # abandoned in this version
 cfgProc = auxRoot / f"{jobName}_proc.cfg"  # config file for data processing
 shpFile = auxRoot / "AOI.shp"  # shapefile for subarea cutting
 
+if not savePath.parent.exists():
+    savePath.parent.mkdir()
+    
 if not savePath.exists():
     savePath.mkdir()
 
