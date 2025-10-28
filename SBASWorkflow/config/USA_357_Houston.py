@@ -71,7 +71,7 @@ mpyPath = workplace / 'Mintpy'
 
 # config files for mintPY SBASs
 
-cfgData = auxRoot / f"{jobName}_data.cfg"  # abandoned in this version
+# cfgData = auxRoot / f"{jobName}_data.cfg"  # abandoned in this version
 cfgProc = auxRoot / f"{jobName}_proc.cfg"  # config file for data processing
 shpFile = auxRoot / "AOI.shp"  # shapefile for subarea cutting
 
