@@ -264,7 +264,8 @@ if __name__ == '__main__':
     minLat, maxLat = setting.minLat, setting.maxLat
     minLon, maxLon = setting.minLon, setting.maxLon
     shpFile = Path(opt.shapefile) if (len(opt.shapefile)!=0) else setting.shpFile
-    cfgData, cfgProc = setting.cfgData, setting.cfgProc
+    # cfgData, cfgProc = setting.cfgData, setting.cfgProc
+    cfgProc = setting.cfgProc
     fnFinalPairs = setting.fnFinalPairs    
     ref_yx = setting.reference_yx
     coh_threshold=setting.coherence_threshold
@@ -321,4 +322,5 @@ if __name__ == '__main__':
     copyMetadata(unzipPath, clipPath)   
     print(f'\033[1;32;40mCreate config file: {cfgProc} \033[0m')
     creatConfigProcess(cfgProc, ref_yx, exclude_date, refer_date,weatherDir=opt.weatherDir,coh_threshold_value=coh_threshold)
+
 
