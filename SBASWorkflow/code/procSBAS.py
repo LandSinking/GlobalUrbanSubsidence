@@ -23,7 +23,8 @@ configFile = Path(opt.config)
 sys.path.append(str(configFile.parent))
 setting = importlib.import_module(configFile.stem)
 
-workPath, cfgData, cfgProc = setting.mpyPath, setting.cfgData, setting.cfgProc
+# workPath, cfgData, cfgProc = setting.mpyPath, setting.cfgData, setting.cfgProc
+workPath, cfgProc = setting.mpyPath, setting.cfgProc
 '''
 STEP_LIST = [
     'load_data',
@@ -124,6 +125,7 @@ print(f'\033[1;32;40mEnd of processing at {time.strftime("%Y-%m-%d %H:%M:%S",tim
 # view SBAS result
 # view.main([f'{workPath}/velocity.h5'])
 # tsview.main([f'{workPath}/timeseries.h5'])
+
 
 
 
