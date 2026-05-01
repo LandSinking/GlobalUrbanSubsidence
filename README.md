@@ -5,6 +5,6 @@ Urban land subsidence occurs worldwide, yet a global-scale assessment based on a
 
 This repository consists of data and codes that execute the SBAS InSAR Workflow and generate all the figures.
 
-The land subsidence velocities, InSAR coherence, the standard deviation of velocities, and geographic locations of reference points for all 465 cities in this study can be visualized at [GUS Portal](https://ee-pkurelab.projects.earthengine.app/view/gus-tmp).  For accessing all the processed datasets, visit our [figshare archive](https://figshare.com/s/6690eab0d9d9af3841de). 
+The land subsidence velocities, InSAR coherence, the standard deviation of velocities, and geographic locations of reference points for all 465 cities in this study can be visualized at [GUS Portal](https://ee-pkurelab.projects.earthengine.app/view/gus).  For accessing all the processed datasets, visit our [figshare archive](https://figshare.com/s/6690eab0d9d9af3841de). 
 
 Analysis results from this repository have been submitted to ***Nature Cities*** and are currently under major revision. Feedback and collaboration are welcome!
