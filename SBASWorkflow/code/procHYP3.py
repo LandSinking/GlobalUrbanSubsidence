@@ -208,7 +208,7 @@ if opt.download:
     
     unique_download_urls=[]
     unique_prefixes=existFilePrefixes
-    pattern = re.compile("S1[AB]{2}_20\d{6}T\d{6}_20\d{6}T\d{6}")
+    pattern = re.compile("S1[ABC]{2}_20\d{6}T\d{6}_20\d{6}T\d{6}")
     for url in download_urls:
         match = re.search(pattern, url)
         currprefix= match.group() 
