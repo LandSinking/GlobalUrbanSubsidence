@@ -6,7 +6,7 @@ import sys
 import zipfile
 import importlib
 from pathlib import Path
-from mintpy import view, tsview, smallbaselineApp
+# from mintpy import view, tsview, smallbaselineApp
 import osgeo_utils.gdal_calc as gc
 from subprocess import run
 
@@ -109,9 +109,9 @@ os.chdir(workPath)
 
 if not opt.backup:    
     print(str(cfgProc))
-    run(f'smallbaselineApp.py {str(cfgProc)} --dostep load_data', shell=True)
-    # smallbaselineApp.main([str(cfgProc), '--start', 'modify_network', '--stop', 'correct_SET'])
-    run(f'smallbaselineApp.py {str(cfgProc)} --start modify_network --stop correct_SET', shell=True)
+    # run(f'mintpy smallbaselineApp {str(cfgProc)} --dostep load_data', shell=True)    
+    # run(f'mintpy smallbaselineApp {str(cfgProc)} --start modify_network --stop correct_SET', shell=True)
+    run(f'mintpy smallbaselineApp {str(cfgProc)} --stop correct_SET', shell=True)
     zip_correct_SET_files(workPath)
 else:
     clear_correct_SET(workPath)
@@ -119,8 +119,7 @@ else:
         f.extractall()
         f.close()
 
-# smallbaselineApp.main([str(cfgProc), '--start', 'correct_troposphere'])
-run(f'smallbaselineApp.py {str(cfgProc)} --start correct_troposphere', shell=True)
+run(f'mintpy smallbaselineApp {str(cfgProc)} --start correct_troposphere', shell=True)
 print(f'\033[1;32;40mEnd of processing at {time.strftime("%Y-%m-%d %H:%M:%S",time.localtime())}\033[0m')
 # view SBAS result
 # view.main([f'{workPath}/velocity.h5'])
