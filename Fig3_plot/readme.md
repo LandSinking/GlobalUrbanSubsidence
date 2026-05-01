@@ -5,7 +5,7 @@ This folder contains the Materials required for piecewise linear fit, and that f
 ## 1. piecewise linear fiting
 
 #### 1.1 code
-- `PiecewiseLinearFit.m`: Matlab codes for piecewise linear fit; This code has a dependency on `parfor_progressbar.m` released by [Daniel Terry](https://ww2.mathworks.cn/matlabcentral/fileexchange/53773-parfor_progressbar), for displaying a graphical progress bar during execution.
+- `PiecewiseLinearFit.m`: Matlab codes for piecewise linear fit; This code depends on `parfor_progressbar.m` (by [Daniel Terry](https://ww2.mathworks.cn/matlabcentral/fileexchange/53773-parfor_progressbar)) for displaying a graphical progress bar during execution, with the corresponding license provided in `license.txt`.
  
 - `Pvalue.py`: python codes (based on [piecewise-regression](https://github.com/chasmani/piecewise-regression) package) for Davies' significance level test:
   <pre><code>Davies, R. B. Hypothesis testing when a nuisance parameter is present only under the alternative. Biometrika, 74(1), 33-43 (1987)</code></pre>
