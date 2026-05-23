@@ -7,4 +7,4 @@ This repository consists of data and codes that execute the SBAS InSAR Workflow 
 
 The land subsidence velocities, InSAR coherence, the standard deviation of velocities, and geographic locations of reference points for all 465 cities in this study can be visualized at [GUS Portal](https://ee-pkurelab.projects.earthengine.app/view/gus). 
 
-Analysis results from this repository have been submitted to ***Nature Cities*** and are currently under major revision. Once the paper published, all processed datasets will be publicly released via Figshare. Feedback and collaboration are welcome!
+Analysis results from this repository have been submitted to ***Nature Cities*** and are currently under major revision. Once the paper is published, all processed datasets will be publicly released via Figshare. Feedback and collaboration are welcome!
